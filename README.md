@@ -1,7 +1,7 @@
 # wafmodsec
 [link1](https://www.howtoforge.com/install-modsecurity-3-with-nginx-on-ubuntu-22-04/)
 [link2](https://stackoverflow.com/questions/66205286/enable-systemctl-in-docker-container)
-
+Terminal 1 : 
 ```
 apt-get install docker-buildx-plugin
 ```
@@ -25,9 +25,11 @@ docker build -t  wafmodsec -f Dockerfile .
 ```
 docker run -it  -p 80:80 --privileged --cap-add=ALL   --name wafmodsec3 wafmodsec
 ```
+Terminal 2 : ctrl+shift+T
 ```
 docker inspect wafmodsec3 | grep IPAddress
 ```
+Terminal 1:
 ```
 apt update 
 ```
