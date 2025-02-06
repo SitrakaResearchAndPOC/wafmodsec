@@ -258,6 +258,8 @@ docker load -i  wafmodsec1.tar.gz
 ```
 docker run -it  -p 80:80 --privileged --cap-add=ALL  wafmodsec:v1 --name wafmodsec3
 ```
+login:root</br>
+pass:root</br>
 ```
 systemctl start nginx
 ```
@@ -270,5 +272,5 @@ systemctl status nginx
 ```
 curl localhost?doc=/bin/ls
 ```
-
+Treat other evasion technic
 
